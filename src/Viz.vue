@@ -7,6 +7,11 @@ const props = defineProps({
 
 const visuals = ref([
   {
+    img: "/viz_mm.png",
+    desc: "Gaussian mixture-model testing.  Used a bootstrap method to generate and test a likelihood that the observed colors (metallicity) of a particular globular cluster population could best be explained by a mixture of two or three normal distributions.",
+    skills: 'R, JAGS, ggplot2'
+  },
+  {
     img: "/viz_zeropoint.png",
     desc: "Mapping fluctuations in the zeropoint magnitude of instrumental filters for the One Degree Imager, indicating a buildup of contamination.  This visualization demonstrated a need for an increased cadence of cleaning and re-aluminization, especially in the higher frequency (blue and green) filters.",
     skills: 'MySQL, Python, HighCharts, JavaScript'
@@ -23,7 +28,7 @@ const visuals = ref([
   },
   {
     img: "/viz_hew.png",
-    desc: "Tableau report of HPC Everywhere user acquisition and behavior, with time-of-day and year analysis",
+    desc: "Tableau report of high-performance computing user acquisition and behavior, with time-of-day and year analysis.  Created pipelines to automatically extract and transform data daily to generate reports",
     skills: 'Tableau, MongoDB, JavaScript'
   }
 ])
@@ -34,7 +39,7 @@ const visual = computed(() => {
 </script>
 
 <template>
-    <div class="relative lg:flex rounded-lg shadow-2xl overflow-hidden">
+    <div class="relative lg:flex rounded-lg overflow-hidden">
       <div
         class="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center"
       >

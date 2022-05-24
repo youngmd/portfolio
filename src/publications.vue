@@ -5,7 +5,78 @@ const props = defineProps({
   showAll: Boolean
 })
 
-const papers = ref([{
+const papers = ref([
+  {
+    "projects": [{
+      "operators": ["5d24ef150a41d55c7402e029", "5d24e56b8dd3ea3f3408283d"],
+      "contributors": [],
+      "developers": ["5d24ba8a1c7476627c24f453"],
+      "leadership": ["602af1bd870e9f3010f48713", "5d9cc2c1cb13e070e2513950", "5d24e56b8dd3ea3f3408283d"],
+      "publications": [],
+      "funding": [],
+      "languages": [],
+      "_id": "5d63e98f660730666363bf31",
+      "name": "BDBS-SCA",
+      "url": "https://bdbs.sca.iu.edu",
+      "description": "The Blanco DECam Bulge Survey (BDBS), a three-year NSF-funded project, alleviates these difficulties by creating images of approximately 200 square degrees of the Milky Way galaxy’s bulge region. To do so, the project used the Dark Energy Camera (DECam) attached to the Blanco 4m Telescope at the Cerro Tololo Inter-American Observatory in Chile. ",
+      "date_created": "2015-02-15T00:00:00.000Z",
+      "repo": "https://github.iu.edu/youngmd/BDBS",
+      "logo": "5d63e98f660730666363bf11",
+      "screenshots": [{
+        "_id": "5d63e98f660730666363bf34",
+        "caption": "BDBS Job Page",
+        "image": "5d63e98f660730666363bf12"
+      }, {
+        "_id": "5d63e98f660730666363bf33",
+        "caption": "BDBS Search Page",
+        "image": "5d63e98f660730666363bf14"
+      }, {"_id": "5d63e98f660730666363bf32", "caption": "BDBS Home Page", "image": "5d63e98f660730666363bf15"}],
+      "__v": 5,
+      "view_rank": 18,
+      "short_url": "bdbs"
+    }],
+    "authors": [{
+      "active": true,
+      "_id": "5d24ba8a1c7476627c24f453",
+      "role": "Lead Software Developer",
+      "name": "Michael Young",
+      "email": "youngmd@iu.edu",
+      "headshot": "5d9b7fcc557d063fe591fdfb",
+      "__v": 0,
+      "joined": "2012-05-14T00:00:00.000Z",
+      "background": "Ph.D in Astronomy (IU 2016)",
+      "sca": true,
+      "uid": "youngmd",
+      "view_rank": 2
+    }, {
+      "active": true,
+      "_id": "5d9cc2c1cb13e070e2513950",
+      "name": "Scott Michael",
+      "email": "scamicha@iu.edu",
+      "role": "Director, Research and Software Solutions",
+      "background": "Scott took over as director of Research and Software Solutions within Research Technologies in Oct 2021. Previously, Scott was a key collaborator as the manager of the Research Applications and Deep Learning (RADL) team at IU.",
+      "joined": null,
+      "sca": false,
+      "view_rank": 8,
+      "headshot": "5d9cc2c1cb13e070e251394e",
+      "__v": 0,
+      "uid": "scamicha"
+    }],
+    "_id": "5dc5938548fbdd548b2d42df",
+    "bib_string": "Young, M. D., Michael, S. 2017.  Big Data Challenges in the Blanco DECam Bulge Survey.  Astronomical Data Analysis Software and Systems XXV, Volume 512 (December 2017);",
+    "date": null,
+    "doi": "",
+    "links": [{
+      "_id": "5dc5938548fbdd548b2d42e0",
+      "url": "http://aspbooks.org/publications/512/189.pdf",
+      "label": "Full Paper (PDF)"
+    }, {
+      "_id": "60df72f068220235caa2521d",
+      "url": "https://drive.google.com/file/d/1R0ZBFFbs6VbzujGdkLRMrrkDNn1PSRKB/view?usp=sharing",
+      "label": "Conference Poster (PDF)"
+    }],
+    "__v": 2
+  }, {
   "projects": [{
     "operators": ["5d24ef150a41d55c7402e029", "5d24e56b8dd3ea3f3408283d"],
     "contributors": [],
@@ -1650,76 +1721,6 @@ const papers = ref([{
     "label": "Live Workshop Handout (PDF)"
   }],
   "__v": 7
-}, {
-  "projects": [{
-    "operators": ["5d24ef150a41d55c7402e029", "5d24e56b8dd3ea3f3408283d"],
-    "contributors": [],
-    "developers": ["5d24ba8a1c7476627c24f453"],
-    "leadership": ["602af1bd870e9f3010f48713", "5d9cc2c1cb13e070e2513950", "5d24e56b8dd3ea3f3408283d"],
-    "publications": [],
-    "funding": [],
-    "languages": [],
-    "_id": "5d63e98f660730666363bf31",
-    "name": "BDBS-SCA",
-    "url": "https://bdbs.sca.iu.edu",
-    "description": "The Blanco DECam Bulge Survey (BDBS), a three-year NSF-funded project, alleviates these difficulties by creating images of approximately 200 square degrees of the Milky Way galaxy’s bulge region. To do so, the project used the Dark Energy Camera (DECam) attached to the Blanco 4m Telescope at the Cerro Tololo Inter-American Observatory in Chile. ",
-    "date_created": "2015-02-15T00:00:00.000Z",
-    "repo": "https://github.iu.edu/youngmd/BDBS",
-    "logo": "5d63e98f660730666363bf11",
-    "screenshots": [{
-      "_id": "5d63e98f660730666363bf34",
-      "caption": "BDBS Job Page",
-      "image": "5d63e98f660730666363bf12"
-    }, {
-      "_id": "5d63e98f660730666363bf33",
-      "caption": "BDBS Search Page",
-      "image": "5d63e98f660730666363bf14"
-    }, {"_id": "5d63e98f660730666363bf32", "caption": "BDBS Home Page", "image": "5d63e98f660730666363bf15"}],
-    "__v": 5,
-    "view_rank": 18,
-    "short_url": "bdbs"
-  }],
-  "authors": [{
-    "active": true,
-    "_id": "5d24ba8a1c7476627c24f453",
-    "role": "Lead Software Developer",
-    "name": "Michael Young",
-    "email": "youngmd@iu.edu",
-    "headshot": "5d9b7fcc557d063fe591fdfb",
-    "__v": 0,
-    "joined": "2012-05-14T00:00:00.000Z",
-    "background": "Ph.D in Astronomy (IU 2016)",
-    "sca": true,
-    "uid": "youngmd",
-    "view_rank": 2
-  }, {
-    "active": true,
-    "_id": "5d9cc2c1cb13e070e2513950",
-    "name": "Scott Michael",
-    "email": "scamicha@iu.edu",
-    "role": "Director, Research and Software Solutions",
-    "background": "Scott took over as director of Research and Software Solutions within Research Technologies in Oct 2021. Previously, Scott was a key collaborator as the manager of the Research Applications and Deep Learning (RADL) team at IU.",
-    "joined": null,
-    "sca": false,
-    "view_rank": 8,
-    "headshot": "5d9cc2c1cb13e070e251394e",
-    "__v": 0,
-    "uid": "scamicha"
-  }],
-  "_id": "5dc5938548fbdd548b2d42df",
-  "bib_string": "Young, M. D., Michael, S. 2017.  Big Data Challenges in the Blanco DECam Bulge Survey.  Astronomical Data Analysis Software and Systems XXV, Volume 512 (December 2017);",
-  "date": null,
-  "doi": "",
-  "links": [{
-    "_id": "5dc5938548fbdd548b2d42e0",
-    "url": "http://aspbooks.org/publications/512/189.pdf",
-    "label": "Full Paper (PDF)"
-  }, {
-    "_id": "60df72f068220235caa2521d",
-    "url": "https://drive.google.com/file/d/1R0ZBFFbs6VbzujGdkLRMrrkDNn1PSRKB/view?usp=sharing",
-    "label": "Conference Poster (PDF)"
-  }],
-  "__v": 2
 }])
 
 const first_author = computed(() => {

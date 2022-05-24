@@ -76,8 +76,28 @@
     </div>
   </div>
 
+
   <div class="banner-2 space-y-10 pb-20" id="work">
     <h3 class="heading3 my-5 text-sky-800">Recent Work</h3>
+
+    <div class="card">
+      <div class="card-image shadow-xl ml-2">
+        <img
+            class="object-cover object-left-top w-full h-48 md:h-96 rounded-xl border-2"
+            src="./assets/cmg_project.png"
+        />
+      </div>
+      <div class="space-y-5 py-8 px-8 lg:py-16 lg:px-20 lg:w-1/2">
+        <h4 class="project-title item">CMG-SCA</h4>
+        <p class="font-work_sans pr-12">
+          Automatically archives raw sequencing data produced by genomic sequencers. Information about a run is immediately registered on the web portal so operators can monitor data archival. An integrated pipeline setup allows for conversion of the raw files to formatted data products.  Access to data products are grouped by projects that are accessible to one or more users/groups.
+        </p>
+        <button class="text-sky-800 font-bold text-xl tracking-wider disabled">
+          Project Access Restricted
+        </button>
+      </div>
+    </div>
+
     <div class="card">
       <div class="space-y-5 py-8 px-8 lg:py-16 lg:px-20 lg:w-1/2">
         <h4 class="project-title item">HPC Everywhere</h4>
@@ -99,40 +119,26 @@
     </div>
 
     <div class="card">
-      <div class="card-image shadow-xl ml-2">
-        <img
-          class="object-cover object-left-top w-full h-48 md:h-96 rounded-xl border-2"
-          src="./assets/cmg_project.png"
-        />
-      </div>
-      <div class="space-y-5 py-8 px-8 lg:py-16 lg:px-20 lg:w-1/2">
-        <h4 class="project-title item">CMG-SCA</h4>
-        <p class="font-work_sans pr-12">
-          Automatically archives raw sequencing data produced by genomic sequencers. Information about a run is immediately registered on the web portal so operators can monitor data archival. An integrated pipeline setup allows for conversion of the raw files to formatted data products.  Access to data products are grouped by projects that are accessible to one or more users/groups.
-        </p>
-        <button class="text-sky-800 font-bold text-2xl tracking-wider">
-          Project Access Restricted
-        </button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="space-y-5 py-8 px-8 lg:py-16 lg:px-20 lg:w-1/2">
-        <h4 class="project-title item">Electronic Health Records Dashboard</h4>
-        <p class="font-work_sans pr-12">
-          A system designed to encabsulate and abstract all of the powerful command line features available to expert HPC users and create an intuitive and accessible web-based interface that any researcher can immediately utilize to improve their HPC experience at Indiana University.
-        </p>
-
-        <button class="text-sky-800 font-bold text-xl tracking-wider disabled">
-          Project Access Restricted
-        </button>
-      </div>
       <div class="card-image mr-2 shadow-xl">
         <img
             class="object-cover object-left-top w-full h-72 md:h-96 rounded-xl border-2"
             src="./assets/ehr_project.png"
         />
       </div>
+      <div class="space-y-5 py-8 px-8 lg:py-16 lg:px-20 lg:w-1/2">
+        <h4 class="project-title item">Electronic Health Records Dashboard</h4>
+        <p class="font-work_sans pr-12">
+          Working with a partner institution I developed a prototype dashboard which collates patient records across years of visits and displays and groups these records based on a proprietary relevance grouping API.
+        </p>
+
+        <button class="text-sky-800 font-bold text-xl tracking-wider disabled">
+          Project Access Restricted
+        </button>
+      </div>
+    </div>
+
+    <div class="text-right py-2">
+      <a class="submit-button" href="https://sca.iu.edu/person/youngmd" target="_blank">See More</a>
     </div>
   </div>
 
@@ -145,8 +151,8 @@
     </div>
     <div class="max-w-7xl mx-auto px-8 py-16">
       <div class="relative">
-        <Carousel :items-to-show="1" :wrap-around="true">
-          <Slide v-for="slide in 4" :key="slide">
+        <Carousel :autoplay="9000" :items-to-show="1" :wrap-around="true">
+          <Slide v-for="slide in 5" :key="slide">
             <div class="carousel__item"><Viz :showVis="slide - 1"></Viz> </div>
           </Slide>
 
@@ -192,7 +198,7 @@
     <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
       <div class="text-3xl text-white">About Me</div>
       <div class="font-work_sans space-y-5 space-x-5 text-white backdrop-blur backdrop-brightness-75 rounded-md">
-        I am Michael Young, currently living in Bloomington, Indiana.  Though my background is that of a research astronomer,
+        I am Michael Young, currently living in Bloomington, Indiana.  With a background as a published observational astronomer,
         my current position is as the senior tech lead and principal research developer/analyst
         for the Scalable Compute Archives (SCA) team within the Research Technologies Division at Indiana University.
         <br /><br />
@@ -207,9 +213,21 @@
   <div class="banner-1 flex h-full items-center">
     <div class="w-7/12 p-12">
 
-      <a class="font-work_sans text-gray-600 font-semibold leading-relaxed text-3xl" href="mailto:jobs@youngmd.net"
-        >📧 jobs@youngmd.net</a
-      >
+      <div>
+        <a class="font-work_sans text-gray-600 font-semibold leading-relaxed text-3xl" href="mailto:jobs@youngmd.net"
+        ><Mail /> jobs@youngmd.net</a
+        >
+      </div>
+      <div>
+        <a class="font-work_sans text-gray-600 font-semibold leading-relaxed text-3xl" href="https://github.com/youngmd" target="_blank"
+        ><Github /> github.com/youngmd</a
+        >
+      </div>
+      <div>
+        <a class="font-work_sans text-gray-600 font-semibold leading-relaxed text-3xl" href="https://www.linkedin.com/in/youngmd13b/" target="_blank"
+        ><Linkedin /> linkedin.com/in/youngmd13b</a
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -221,6 +239,10 @@ import Modal from './modal.vue';
 
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+import 'vue-material-design-icons/styles.css';
+import Mail from 'vue-material-design-icons/Mail.vue'
+import Github from 'vue-material-design-icons/Github.vue'
+import Linkedin from 'vue-material-design-icons/Linkedin.vue'
 
 const showModal = ref(false)
 const showMenu = ref(false)

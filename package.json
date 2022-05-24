@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "vue": "^3.2.25",
+    "vue-material-design-icons": "^5.0.0",
     "vue3-carousel": "^0.1.40",
     "vue3-smooth-scroll": "^0.8.1"
   },
