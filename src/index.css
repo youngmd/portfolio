@@ -29,7 +29,12 @@
 }
 
 .heading3 {
-  color: #403930;
+  color: #d6edff;
+  @apply md:text-5xl text-xl font-bold font-work_sans tracking-wide;
+}
+
+.heading3a {
+  color: #507083;
   @apply md:text-5xl text-xl font-bold font-work_sans tracking-wide;
 }
 
